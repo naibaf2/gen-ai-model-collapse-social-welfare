@@ -1,12 +1,12 @@
 """
 All four models of the SI, in six rows.
 
-Row 1  main text            a = b - m x_AI
-Row 2  lagged quality       a = b - m s,   ds/dt = lam (x_AI - s),          lam = LAM_MID
-Row 3  lagged quality       same,                                             lam = LAM_SLOW
-Row 4  fast corpus          a = b - m r x_AI / (r x_AI + x_H + ell)
-Row 5  corpus dynamics      a = b - m s,   ds/dt = lam (r x_AI - s rho),     lam = LAM_MID
-Row 6  corpus dynamics      same,                                             lam = LAM_SLOW
+Row 1  linear + intantaneous (main text)            a = b - m x_AI
+Row 2  linear + lagged        a = b - m s,   ds/dt = lam (x_AI - s),          lam = LAM_MID
+Row 3  linear + lagged       same,                                             lam = LAM_SLOW
+Row 4  saturated + instantaneous          a = b - m r x_AI / (r x_AI + x_H + ell)
+Row 5  saturated + lagged       a = b - m s,   ds/dt = lam (r x_AI - s rho),     lam = LAM_MID
+Row 6  saturated + lagged   same,                                             lam = LAM_SLOW
 
 with rho = x_H + ell + r x_AI. Rows 1 and 4 contain no lambda.
 
